@@ -1,0 +1,83 @@
+{
+  "info": {
+    "name": "amltransactionscreeningapi-1-5-0 Postman Collection",
+    "description": "Operational baseline generated from observed Kong Konnect configuration.\n\nOpenAPI version: 3.0.3",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "noauth"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://aml-engine.svc.prod.aldermoor.example/api/v1",
+      "type": "string",
+      "description": "Override with the base URL of the deployed Kong gateway."
+    }
+  ],
+  "item": [
+    {
+      "name": "amltransactionscreeningapi-1-5-0--getalerts",
+      "request": {
+        "method": "GET",
+        "description": "amltransactionscreeningapi-1-5-0--getalerts\n\nResponses:\n- default: Runtime response semantics are not observable from Kong configuration.",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/internal/aml/1.5.0/alerts",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "internal",
+            "aml",
+            "1.5.0",
+            "alerts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "amltransactionscreeningapi-1-5-0--postcases",
+      "request": {
+        "method": "POST",
+        "description": "amltransactionscreeningapi-1-5-0--postcases\n\nResponses:\n- default: Runtime response semantics are not observable from Kong configuration.",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/internal/aml/1.5.0/cases",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "internal",
+            "aml",
+            "1.5.0",
+            "cases"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "amltransactionscreeningapi-1-5-0--postscreenings",
+      "request": {
+        "method": "POST",
+        "description": "amltransactionscreeningapi-1-5-0--postscreenings\n\nResponses:\n- default: Runtime response semantics are not observable from Kong configuration.",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/internal/aml/1.5.0/screenings",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "internal",
+            "aml",
+            "1.5.0",
+            "screenings"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
